@@ -10,15 +10,97 @@
             background-position: center;
             
           }
-          
+          button {
+             background: #d32f2f;
+             color: white;
+             padding: 30px 40px;
+             border: none;
+             border-radius: 100px;
+             cursor: pointer;
+             transition: background 0.3s;
+         }
+         
+         button:hover {
+             background: #b71c1c;
+         }
+         
+         /* Footer */
+         footer {
+             text-align: center;
+             padding: 20px;
+             background: #222;
+             color: white;
+             margin-top: 20px;
+         }
+         
+         footer a {
+             color: #ffcc00;
+         }
+         input[type="checkbox"] {
+          width: 20px;
+          height: 20px;
+         }
+         legend {
+             font-weight: bold;
+             color: #d6cccc;
+             text-align: center;
+         }
+         
+         label {
+             display: block;
+             margin-top: 10px;
+             font-size: 1.1em;
+         }
+         
+         /* Form */
+         form {
+             text-align: center;
+             padding: 20px;
+         }
+         
+         input, textarea {
+             width: 80%;
+             padding: 10px;
+             margin: 10px 0;
+             border: 1px solid #ccc;
+             border-radius: 5px;
+         }
+         h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(45deg, #ff0000, #ff4d4d, #b30000);
+    padding: 20px 30px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    box-shadow: 0 5px 20px rgba(255, 0, 0, 0.5);
+    display: inline-block;
+    border: 3px solid #b30000;
+    text-shadow: 2px 2px 10px rgba(255, 50, 50, 0.8);
+    position: relative;
+    overflow: hidden;
+    animation: glow 1.5s infinite alternate;
+}
+legend {
+  display: table;
+  margin: 0 auto;
+  padding: 20px 30px;
+  box-shadow: 0 5px 20px rgba(75, 21, 21, 0.5);
+  border: 3px solid #b30000;
+  background: linear-gradient(45deg, #bb3838, #b43b3b, #a73838);
+}
+
+         
          </style>
     </head>
     <body style="text-align: center;">
         <main>
-          <h1 style="color: brown;" style="font-size: large;" style="font-family:Georgia, 'Times New Roman', Times, serif">Toyota</h1>
+          <h1> <a href="https://www.toyota.com/" style="text-decoration: none"; style="color: #d6cccc;">Toyota</a></h1>
           <section>
             <h2 style="color: rgb(41, 150, 223);" style="font-size: larger;">Yaris</h2>
-            <h3><br> <br>you know whats more durable than a toyota?? more <a href="https://www.toyota.com/">Toyota's </br> </br> </a>
+            <h3><br> <br>you know whats more durable than a toyota?? more <a href="https://www.toyota.com/">Toyotas </br> </br> </a>
             <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Toyota-Yaris-hatch-1.jpg" alt="yaris2007" width="350" height="250">
             <img src="https://www.meritcars.co.nz/Motorcentral/VehicleData/MER-c0338f68-aa45-4aac-884f-bed079bc39fe-1.jpg" alt="yaris2013" width="350" height="250">
           </section>
@@ -44,18 +126,18 @@
             <h2>what do you think?</h2>
             
               <fieldset>
-                <legend>WHICH VERSION BETWEEN THESE TWO DO YOU PREFER?</legend>
-                <label><input id="yaris 2013" type="radio" name="yaris 2013-yaris 2007" value="yaris 2013" checked>yaris 2013</label>
-                <label><input id="yaris 2007" type="radio" name="yaris 2013-yaris 2007" value="yaris2007">yaris 2007</label>
+                <legend> WHICH VERSION BETWEEN THESE TWO DO YOU PREFER?</legend>
+                <label><input id="yaris 2013" type="checkbox" name="yaris 2013-yaris 2007" value="yaris 2013" checked>    yaris 2013</label>
+                <label><input id="yaris 2007" type="checkbox" name="yaris 2013-yaris 2007" value="yaris2007">    yaris 2007</label>
               </fieldset>
-             other than these two whats your all time favorite car?
+             <h2>other than these two whats your all time favorite car?</h2>
               <form action="https://formsubmit.co/hichembendjafer2018@gmail.com" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <br>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <br>
                 <textarea name="message" placeholder="Your favorite car" required></textarea>
-                <button type="submit">Send</button>
+                 <br> <button type="submit">Send</button>
             </form>
             </form>
           </section>
